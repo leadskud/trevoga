@@ -102,6 +102,21 @@
   .stickycta .t b{color:var(--ink);font-size:14px}
   .stickycta .btn{padding:11px 18px;font-size:15px;box-shadow:none}
   @media(max-width:760px){.stickycta{display:flex}}
+
+  /* mobile-CRO (2026-06-12): компактный hero-CTA выше длинного dek на мобайле */
+  @media(max-width:760px){
+    .wrap.hero{display:flex;flex-direction:column}
+    .wrap.hero > *{order:5}
+    .wrap.hero .kicker{order:1}
+    .wrap.hero h1{order:2}
+    .wrap.hero .giftcard{order:3}
+    .wrap.hero .herocta{order:4;margin:14px 0 6px}
+    .wrap.hero .dek{order:6}
+    .wrap.hero .microtrust{order:7}
+    .wrap.hero .byline{order:8}
+    .wrap.hero .herocta .btn.ghost{display:none}
+    .wrap.hero .herocta .btn{width:100%;text-align:center;padding:14px 22px}
+  }
 </style>
 </head>
 <body>
@@ -113,7 +128,7 @@
   </div>
 </header>
 
-<div class="wrap">
+<div class="wrap hero">
   <span class="kicker">Психология · управление тревогой · онлайн из любой страны</span>
   <h1>Тревога после переезда не отпускает — а к психологу на чужом языке идти не хочется</h1>
   <p class="dek">Сменили страну — и вроде всё хорошо, но внутри постоянно «фонит»: беспокойство без причины, тяжело уснуть, мысли крутятся вокруг «а вдруг не получится». Местный психолог говорит на другом языке, а объяснить, что с тобой, хочется по-русски. Спокойный первый шаг — бесплатный материал «Как управлять тревогой»: простые техники, на русском, из любого часового пояса.</p>
